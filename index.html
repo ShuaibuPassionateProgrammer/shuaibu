@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuaibu's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: url('images/background.jpg') no-repeat center center fixed; /* Background image */
+            background-size: cover;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1); /* Translucent background */
+            border-radius: 20px;
+            backdrop-filter: blur(10px); /* Blur effect */
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .header h1 {
+            font-size: 28px;
+            margin-left: 20px;
+            color: #1976d2; /* Blue color for header */
+        }
+        h2 {
+            color: #1976d2; /* Blue color for section headings */
+            border-bottom: 2px solid #bbdefb; /* Underline effect */
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.2); /* Light translucent background for sections */
+            backdrop-filter: blur(5px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .education ul, .skills ul, .social-media ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .education li, .skills li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px; /* Indent for bullets */
+        }
+        .education li::before {
+            content: "\2022";
+            font-weight: bold;
+            font-size: 18px;
+            color: #1976d2; /* Blue bullet points */
+            position: absolute;
+            left: 0;
+        }
+        .work-experience table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .work-experience th, .work-experience td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .work-experience th {
+            background-color: #bbdefb; /* Light blue for table header */
+        }
+        .skills li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .progress {
+            width: 70%; /* Adjust the width of the progress bar */
+            background-color: #e3f2fd; /* Light blue background for progress */
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            height: 20px;
+            margin-left: 10px;
+        }
+        .progress span {
+            display: block;
+            height: 100%;
+            background-color: #1976d2; /* Blue color for progress */
+            text-align: center;
+            line-height: 20px; /* Center the text vertically */
+            color: white;
+            transition: width 0.5s;
+        }
+        .hobbies a, .contact-me a, .social-media a {
+            text-decoration: none;
+            color: #1976d2; /* Blue color for links */
+            transition: color 0.3s;
+        }
+        .hobbies a:hover, .contact-me a:hover, .social-media a:hover {
+            color: #1565c0; /* Dark blue color for hover effect */
+        }
+        .social-media li {
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                margin: 0 20px;
+            }
+            .header {
+                flex-direction: column;
+                align-items: center;
+            }
+            .header img {
+                width: 50px;
+                height: 50px;
+            }
+            .header h1 {
+                font-size: 18px;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/shuaibu.png" alt="This is Saudatu's profile picture">
+            <h1>IBRAHIM SHUAIBU ISA</h1>
+        </div>
+        <div class="section education">
+            <h2>Education</h2>
+            <ul>
+                <li>Hassan Primary School, Jalingo</li>
+                <li>Center for Excellence Secondary School</li>
+                <li>Taraba State University, Jalingo</li>
+            </ul>
+        </div>
+        <div class="section work-experience">
+            <h2>Work Experience</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dates</th>
+                        <th>Work</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td >2019-2021</td>
+                        <td>ICT</td>
+                    </tr>
+                    <tr>
+                        <td>2019</td>
+                        <td>Software Developer</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="section skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>
+                    <i class="fab fa-html5 icon"></i>HTML
+                    <div class="progress">
+                        <span style="width: 80%;">80%</span>
+                    </div>
+                </li>
+                <li>
+                    <i class="fab fa-css3-alt icon"></i>CSS
+                    <div class="progress">
+                        <span style="width: 70%;">70%</span>
+                    </div>
+                </li>
+                <li>
+                    <i class="fab fa-js icon"></i>JavaScript
+                    <div class="progress">
+                        <span style="width: 90%;">90%</span>
+                    </div>
+                </li>
+                <li>
+                    <i class="fab fa-react icon"></i>React
+                    <div class="progress">
+                        <span style="width: 85%;">85%</span>
+                    </div>
+                </li>
+                <li>
+                    <i class="fab fa-android icon"></i>Android App Development
+                    <div class="progress">
+                        <span style="width: 75%;">75%</span>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-desktop icon"></i>Desktop App Development
+                    <div class="progress">
+                        <span style="width: 80%;">80%</span>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-robot icon"></i>AI Development
+                    <div class="progress">
+                        <span style="width: 60%;">60%</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="section social-media">
+            <h2>Connect with me</h2>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/shuaibu-ibrahim-76970b279/" target="_blank">
+                        <i class="fab fa-linkedin icon"></i> LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/ShuaibuPro1049" target="_blank">
+                        <i class="fab fa-twitter icon"></i> Twitter
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="section hobbies">
+            <h2>Hobbies</h2>
+            <a href="hobbies.html">My Hobbies</a>
+        </div>
+        <div class="section contact-me">
+            <h2>Contact Me</h2>
+            <p><i class="fas fa-phone icon"></i> Phone: +2348166797313, +2349032509699</p>
+            <a href="contact-me.html ">Contact Me</a>
+        </div>
+    </div>
+</body>
+</html>
